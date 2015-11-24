@@ -5,10 +5,9 @@ var app = express()
 var args = process.argv.slice(2);
 var PORT = args[0];
 
-
 app.get('/', function(req, res) 
 {
-	res.send("Hello Blue\n");
+	res.send("Hello\n");
 });
 
 var server = app.listen(PORT, function () {
